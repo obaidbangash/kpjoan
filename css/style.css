@@ -1,0 +1,613 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "Jost";
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* global css starts here */
+.container {
+  max-width: 1699px;
+  margin: 0 auto;
+}
+.h2 {
+  font-size: 76px;
+  line-height: 101px;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+  color: #95989a;
+}
+a {
+  display: inline-block;
+}
+.h2::after {
+  position: absolute;
+  content: "";
+  width: 244px;
+  height: 244px;
+bottom: 40px;
+  left: -114px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #b2e8e8;
+  opacity: 0.31;
+}
+/* global css ends here */
+
+/* fonts here */
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Bold.woff2") format("woff2"),
+    url("../fonts/Jost-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Black.woff2") format("woff2"),
+    url("../fonts/Jost-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Regular.woff2") format("woff2"),
+    url("../fonts/Jost-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Medium.woff2") format("woff2"),
+    url("../fonts/Jost-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-SemiBold.woff2") format("woff2"),
+    url("../fonts/Jost-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* fonts ends here */
+/* header css starts here */
+header {
+  background-color: #e8b2b2;
+}
+
+header ul.navbar-nav li.nav-item a.nav-link {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+header ul.navbar-nav li.nav-item {
+  margin: 0 20px;
+}
+header .header-form {
+  max-width: 2207px;
+  height: 34px;
+  position: relative;
+  margin-right: 26px;
+}
+
+header .header-form input {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+header .header-form .search-icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  height: 80%;
+  padding: 0 9px;
+  z-index: 1;
+  border-left: 0.3px solid #fff;
+}
+header .header-form .search-icon img {
+  vertical-align: middle;
+}
+header .cart-icons {
+  padding-top: 3px;
+}
+header .cart-icons a {
+  margin-right: 26px;
+}
+header .cart-icons .cart {
+  position: relative;
+}
+header .cart-icons .cart:before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #b2e8e8;
+  color: #fff;
+}
+
+header .cart-icons .heart {
+  position: relative;
+}
+header .cart-icons .heart:before {
+  position: absolute;
+  content: "4";
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #b2e8e8;
+  color: #fff;
+}
+header .log-in {
+  width: 67px;
+  height: 67px;
+  margin-left: 29px;
+}
+header .log-in img {
+  width: 100%;
+}
+
+/* banner section starts here */
+
+.index-banner-section .tabs-section {
+  padding: 110px 30px 0;
+}
+
+.index-banner-section .inner-section {
+  background-image: url(../images/bg-landingPage.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 38px;
+  padding-bottom: 79px;
+}
+
+.index-banner-section .tabs-section h2 {
+  padding: 42px 0px 0px 30px;
+  font-weight: 400;
+}
+
+.index-banner-section .tabs-section h2.h2::after {
+  display: none;
+}
+
+.index-banner-section .tabs-section .active {
+  color: #e8b2b2;
+  font-weight: 600;
+}
+
+.index-banner-section .tabs-section h2:nth-child(2n) {
+  padding-left: 90px;
+}
+.index-banner-section .inner-section h1 {
+  font-size: 121px;
+  padding-top: 85px;
+  color: #e8b2b2;
+  padding-bottom: 58px;
+}
+
+.index-banner-section .inner-section p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  max-width: 65%;
+  margin: 0 auto;
+  color: #fff;
+}
+.welcome-wild {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+/* banner section ends here */
+
+/* About us section starts here */
+
+.about-us {
+  padding: 38px 0 136px;
+  background-color: #fff;
+}
+.about-us .about-left {
+  max-width: 75%;
+}
+.about-us .about-img {
+  max-width: 727px;
+  margin-left: auto;
+}
+.about-us .about-img img {
+  width: 100%;
+}
+.about-us .about-left .h2::after {
+  z-index: -1;
+}
+.inspiration{
+  padding: 122px 0;
+}
+.inspiration .about-left .h2::after{
+background-color: #e8b2b2;
+}
+.about-us .about-left .h2 {
+  z-index: 1;
+  margin-bottom: 31px;
+}
+.about-us .about-us-content {
+  max-width: 1564px;
+  margin: 0 auto;
+}
+.about-us .about-us-content span {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  max-width: 520px;
+  font-family: "Playfair Display";
+  color: #666666;
+  margin-bottom: 37px;
+}
+
+/* About us section Ends here */
+/* section designer of the month */
+.designer {
+  background-color: #f3f7f8;
+  padding: 96px 0 69px;
+}
+.designer .designer-left {
+  max-width: 807px;
+  background-color: #fff;
+  padding: 67px 0 54px;
+  border-radius: 49px;
+  box-shadow: 1px 10px 22px 1px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 1px 10px 22px 1px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 1px 10px 22px 1px rgba(0, 0, 0, 0.16);
+}
+.designer .designer-content {
+  max-width: 588px;
+  margin: 0 auto;
+  text-align: center;
+}
+.designer .designer-content h2 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 52px;
+  text-align: center;
+}
+.designer .designer-content .designer-name {
+  background-color: #e8b2b2;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 26px 0;
+}
+.designer .designer-content .designer-name a {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #fff;
+}
+.designer .designer-content .designer-img {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.designer .designer-content p {
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+  max-width: 533px;
+  margin: 0 auto 17px;
+}
+.designer .designer-content .follow {
+  background-color: #b2e8e8;
+  width: 289px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 24px 0;
+  border-radius: 100px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.designer .designer-right {
+  max-width: 849px;
+  margin: 22px auto 0;
+  text-align: center;
+}
+.designer .designer-right img {
+  width: 100%;
+}
+/* section designer of the month */
+/* section women design */
+.women-design {
+  padding: 60px 0 57px;
+}
+.women-design .other-ul {
+  max-width: 1111px;
+  margin: 0 auto 101px;
+}
+.women-design .other-ul li a {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 47px;
+  border-bottom: 8px solid transparent;
+
+  color: #021819;
+}
+.women-design .other-ul li a:hover {
+  color: #e8b2b2;
+  border-bottom: 8px solid #e8b2b2;
+  transition: all 0.3s ease-in-out;
+}
+.women-design .card-inner {
+  position: relative;
+  margin-bottom: 76px;
+  -webkit-box-shadow: 0px 10px 22px -5px #000000;
+  box-shadow: 0px 10px 22px -5px #000000;
+  border-radius: 49px;
+  overflow: hidden;
+}
+.women-design .card-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 587px;
+  border-radius: 49px;
+}
+.women-design .card-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 33px;
+  right: 33px;
+}
+.women-design .card-icons a {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #e8b2b2;
+  text-align: center;
+  line-height: 52px;
+  margin-bottom: 22px;
+}
+
+.women-design .card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 49px;
+  padding: 13px 0 16px;
+}
+
+.women-design .card-bottom .card-title {
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 39px;
+  display: block;
+  color: #b2e8e8;
+  margin-bottom: 6px;
+}
+.women-design .card-bottom a {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 31px;
+  display: block;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.women-design .card-bottom .price {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 37px;
+  display: block;
+  color: #fff;
+}
+.women-design .card-2 {
+  max-width: 426px;
+  margin: 0 auto;
+}
+.women-design .card-2 .card-image img {
+  height: 426px;
+}
+.women-design .card-2wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.women-design .card-5 {
+  margin-top: -77px;
+}
+.women-design .card-6 {
+  margin-top: -40px;
+}
+/* section women design */
+
+/* trwending Modal starts here  */
+
+.modal-content .modal-body {
+  padding: 26px 41px;
+}
+
+.modal-content .modal-body p,
+.dropdown .dropdown-menu .dropdown-item {
+  padding: 30px 0px;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #f1f1f3;
+}
+
+.modal-content .modal-body .active {
+  color: #e8b2b2;
+}
+
+.women-design .card-row-2 {
+  max-width: 525px;
+}
+.women-design .card-row-2 .card-image img {
+  height: 525px;
+}
+
+.women-design .card-row-3 {
+  max-width: 446px;
+}
+.women-design .card-row-3 .card-image img {
+  height: 446px;
+}
+.women-design .card-10 {
+  max-width: 663px;
+}
+.women-design .card-10 .card-image img {
+  height: 291px;
+}
+.women-design .card-lastRow {
+  margin-top: -160px;
+}
+.women-design .view-more {
+  font-size: 35px;
+  line-height: 47px;
+  font-weight: 500;
+  color: #e8b2b2;
+}
+.women-design .view-more span {
+  margin-left: 26px;
+}
+
+/* Trending Modal ends here */
+/* footer here */
+footer {
+  padding: 76px 0 88px;
+  background-color: rgb(176, 232, 232, 0.5);
+  text-align: center;
+  border-top-right-radius: 49px;
+}
+footer p {
+  font-size: 22px;
+  line-height: 30px;
+  color: #1d1d1d;
+}
+footer .footer-icons a {
+  width: 68px;
+  height: 68px;
+  background-color: #e8b2b2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 68px;
+  margin: 0 8px;
+}
+/* footer here */
+
+/* Drop Down styling starts here */
+
+.dropdown .dropdown-menu {
+  width: 200px;
+  /* padding: 10px; */
+}
+
+.dropdown::after {
+  content: "";
+}
+
+/* DropDown styling ends here */
+/* inspiration page starts here */
+.women-design .inspiration-card .card-image img{
+  height: 498px;
+}
+/* New styling */
